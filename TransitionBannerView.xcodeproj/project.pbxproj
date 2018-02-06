@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		22469B29DDEB360EE9DA204F /* libPods-TransitionBannerView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CC0F0580D4B4223F76E1B491 /* libPods-TransitionBannerView.a */; };
 		23256E8220299533008ADAC2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 23256E8120299533008ADAC2 /* AppDelegate.m */; };
 		23256E8520299533008ADAC2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23256E8420299533008ADAC2 /* ViewController.m */; };
 		23256E8820299533008ADAC2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23256E8620299533008ADAC2 /* Main.storyboard */; };
@@ -15,6 +16,8 @@
 		23256E9020299533008ADAC2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 23256E8F20299533008ADAC2 /* main.m */; };
 		23256E9A20299534008ADAC2 /* TransitionBannerViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 23256E9920299534008ADAC2 /* TransitionBannerViewTests.m */; };
 		23256EA520299534008ADAC2 /* TransitionBannerViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 23256EA420299534008ADAC2 /* TransitionBannerViewUITests.m */; };
+		23256EBC20299647008ADAC2 /* ELTransitionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 23256EB820299646008ADAC2 /* ELTransitionView.m */; };
+		23256EBD20299647008ADAC2 /* ELTransitionBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 23256EBB20299646008ADAC2 /* ELTransitionBannerView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,13 @@
 		23256EA020299534008ADAC2 /* TransitionBannerViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TransitionBannerViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		23256EA420299534008ADAC2 /* TransitionBannerViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransitionBannerViewUITests.m; sourceTree = "<group>"; };
 		23256EA620299534008ADAC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23256EB820299646008ADAC2 /* ELTransitionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELTransitionView.m; sourceTree = "<group>"; };
+		23256EB920299646008ADAC2 /* ELTransitionBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELTransitionBannerView.h; sourceTree = "<group>"; };
+		23256EBA20299646008ADAC2 /* ELTransitionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELTransitionView.h; sourceTree = "<group>"; };
+		23256EBB20299646008ADAC2 /* ELTransitionBannerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELTransitionBannerView.m; sourceTree = "<group>"; };
+		924E81BBC8F3BFD54AC840E2 /* Pods-TransitionBannerView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TransitionBannerView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TransitionBannerView/Pods-TransitionBannerView.debug.xcconfig"; sourceTree = "<group>"; };
+		CC0F0580D4B4223F76E1B491 /* libPods-TransitionBannerView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TransitionBannerView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7480C3E33257074108192EE /* Pods-TransitionBannerView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TransitionBannerView.release.xcconfig"; path = "Pods/Target Support Files/Pods-TransitionBannerView/Pods-TransitionBannerView.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22469B29DDEB360EE9DA204F /* libPods-TransitionBannerView.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +96,8 @@
 				23256E9820299534008ADAC2 /* TransitionBannerViewTests */,
 				23256EA320299534008ADAC2 /* TransitionBannerViewUITests */,
 				23256E7E20299533008ADAC2 /* Products */,
+				89F712EA0AA1D8B6FCC3F084 /* Pods */,
+				F55D47C476004AB4CC4411AC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +118,7 @@
 				23256E8120299533008ADAC2 /* AppDelegate.m */,
 				23256E8320299533008ADAC2 /* ViewController.h */,
 				23256E8420299533008ADAC2 /* ViewController.m */,
+				23256EBE20299653008ADAC2 /* Banner */,
 				23256E8620299533008ADAC2 /* Main.storyboard */,
 				23256E8920299533008ADAC2 /* Assets.xcassets */,
 				23256E8B20299533008ADAC2 /* LaunchScreen.storyboard */,
@@ -132,6 +146,35 @@
 			path = TransitionBannerViewUITests;
 			sourceTree = "<group>";
 		};
+		23256EBE20299653008ADAC2 /* Banner */ = {
+			isa = PBXGroup;
+			children = (
+				23256EB920299646008ADAC2 /* ELTransitionBannerView.h */,
+				23256EBB20299646008ADAC2 /* ELTransitionBannerView.m */,
+				23256EBA20299646008ADAC2 /* ELTransitionView.h */,
+				23256EB820299646008ADAC2 /* ELTransitionView.m */,
+			);
+			name = Banner;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		89F712EA0AA1D8B6FCC3F084 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				924E81BBC8F3BFD54AC840E2 /* Pods-TransitionBannerView.debug.xcconfig */,
+				D7480C3E33257074108192EE /* Pods-TransitionBannerView.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F55D47C476004AB4CC4411AC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CC0F0580D4B4223F76E1B491 /* libPods-TransitionBannerView.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,9 +182,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 23256EA920299534008ADAC2 /* Build configuration list for PBXNativeTarget "TransitionBannerView" */;
 			buildPhases = (
+				632FB053B7D17420BA3E339D /* [CP] Check Pods Manifest.lock */,
 				23256E7920299533008ADAC2 /* Sources */,
 				23256E7A20299533008ADAC2 /* Frameworks */,
 				23256E7B20299533008ADAC2 /* Resources */,
+				D006B73D6074F8EC711A1EF3 /* [CP] Embed Pods Frameworks */,
+				8B5CE1BD747E63E9F03F22A4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -260,14 +306,67 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		632FB053B7D17420BA3E339D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TransitionBannerView-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B5CE1BD747E63E9F03F22A4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TransitionBannerView/Pods-TransitionBannerView-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D006B73D6074F8EC711A1EF3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TransitionBannerView/Pods-TransitionBannerView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		23256E7920299533008ADAC2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23256EBC20299647008ADAC2 /* ELTransitionView.m in Sources */,
 				23256E8520299533008ADAC2 /* ViewController.m in Sources */,
 				23256E9020299533008ADAC2 /* main.m in Sources */,
 				23256E8220299533008ADAC2 /* AppDelegate.m in Sources */,
+				23256EBD20299647008ADAC2 /* ELTransitionBannerView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,6 +527,7 @@
 		};
 		23256EAA20299534008ADAC2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 924E81BBC8F3BFD54AC840E2 /* Pods-TransitionBannerView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -441,6 +541,7 @@
 		};
 		23256EAB20299534008ADAC2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7480C3E33257074108192EE /* Pods-TransitionBannerView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
