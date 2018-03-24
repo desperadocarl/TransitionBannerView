@@ -247,49 +247,7 @@ typedef NS_ENUM(NSInteger, ELTransitionBannerViewDirection) {
 // 参数要细调
 - (void)shakeAim{
     self.hidden = NO;
-    CGPoint oldOrigin = self.frame.origin;
-    self.layer.anchorPoint = CGPointMake(0.5, 0);
-    CGPoint newOrigin = self.frame.origin;
-    CGPoint transition;
-    transition.x = newOrigin.x - oldOrigin.x;
-    transition.y = newOrigin.y - oldOrigin.y;
-    self.center = CGPointMake (self.center.x - transition.x, self.center.y - transition.y);
-    self.transform = CGAffineTransformMakeRotation(M_PI * - 0.2);
-    
-    //尽可能地去模仿物理学 交替使用in out //可以用阻尼系数做 但UI不是这个效果，可以优化成关键帧
-    [UIView animateWithDuration:0.3 delay:0 options:UIViewAnimationOptionCurveEaseIn animations:^{
-        self.alpha = 1;
-        self.transform = CGAffineTransformMakeRotation(M_PI * 0);
-    } completion:^(BOOL finished) {
-        [UIView animateWithDuration:0.2 delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
-            self.transform = CGAffineTransformMakeRotation(M_PI * 0.08);
-        } completion:^(BOOL finished) {
-            [UIView animateWithDuration:0.2 delay:0 options:UIViewAnimationOptionCurveEaseIn animations:^{
-                self.transform = CGAffineTransformMakeRotation(M_PI * 0);
-            } completion:^(BOOL finished) {
-                [UIView animateWithDuration:0.16 delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
-                    self.transform = CGAffineTransformMakeRotation(M_PI * - 0.04);
-                } completion:^(BOOL finished) {
-                    [UIView animateWithDuration:0.16 delay:0 options:UIViewAnimationOptionCurveEaseIn animations:^{
-                        self.transform = CGAffineTransformMakeRotation(M_PI * 0);
-                    } completion:^(BOOL finished) {
-                        [UIView animateWithDuration:0.2 delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
-                            self.transform = CGAffineTransformMakeRotation(M_PI * 0.01);
-                        } completion:^(BOOL finished) {
-                            [UIView animateWithDuration:0.25 delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
-                                self.transform = CGAffineTransformMakeRotation(M_PI * -0.005);
-                            } completion:^(BOOL finished) {
-                                [UIView animateWithDuration:0.15 delay:0 options:UIViewAnimationOptionCurveLinear animations:^{
-                                    self.transform = CGAffineTransformMakeRotation(M_PI * 0.0);
-                                } completion:^(BOOL finished) {
-                                }];
-                            }];
-                        }];
-                    }];
-                }];
-            }];
-        }];
-    }];
+    self.alpha = 1;
 }
 
 #pragma mark - private Methods

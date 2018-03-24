@@ -33,7 +33,7 @@
     [arr addObject:@"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1517595972082&di=248986537313aabe7d3f864035e69ff0&imgtype=0&src=http%3A%2F%2Ff4.topitme.com%2F4%2Fd6%2Faa%2F112483878856faad64o.jpg"];
     self.bannerView.imageURLs = [arr copy];
     
-    [self performSelector:@selector(shakeAim) withObject:nil afterDelay:1.0f];
+    [self shakeAim];
     
 }
 
